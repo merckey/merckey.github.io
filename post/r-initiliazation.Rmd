@@ -1,0 +1,26 @@
+---
+title: "Setup New Rstudio Libraries"
+author: "Merckey"
+date: 2019-01-29T23:39:06
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+
+```{r setup, include=FALSE, warning=F}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+## Install blogdown dependencies
+```{r eval=F}
+library(blogdown)
+install_hugo()
+blogdown:::new_post_addin()
+```
+
+
+## Install standard environment
+```{r eval=F}
+install.packages("kableExtra")
+
+```

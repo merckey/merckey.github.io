@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Setup New Rstudio Libraries - Merckey</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Merckey" />
+  <meta name="description" content="Install blogdown dependencieslibrary(blogdown)install_hugo()blogdown:::new_post_addin()Install standard environmentinstall.packages(&amp;quot;kableExtra&amp;quot;)" />
+
+  <meta name="keywords" content="R, C&#43;&#43;, Bioinformatics" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.53" />
+
+
+<link rel="canonical" href="/2019/01/29/setup-new-rstudio-libraries/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<script src="https://cdn.jsdelivr.net/npm/eruda@1.2.6/eruda.min.js" integrity="sha256-Jmz4bc3kp+rRrXX2tGadNBKFLwtzMapr8kHABxSAAP8=" crossorigin="anonymous"></script>
+<script>eruda.init();</script>
+
+
+
+
+
+<link href="/dist/ehlxr.min.css?v=0.0.1" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<meta property="og:title" content="Setup New Rstudio Libraries" />
+<meta property="og:description" content="Install blogdown dependencieslibrary(blogdown)install_hugo()blogdown:::new_post_addin()Install standard environmentinstall.packages(&quot;kableExtra&quot;)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2019/01/29/setup-new-rstudio-libraries/" /><meta property="article:published_time" content="2019-01-29T23:39:06&#43;00:00"/>
+<meta property="article:modified_time" content="2019-01-29T23:39:06&#43;00:00"/>
+
+<meta itemprop="name" content="Setup New Rstudio Libraries">
+<meta itemprop="description" content="Install blogdown dependencieslibrary(blogdown)install_hugo()blogdown:::new_post_addin()Install standard environmentinstall.packages(&quot;kableExtra&quot;)">
+
+
+<meta itemprop="datePublished" content="2019-01-29T23:39:06&#43;00:00" />
+<meta itemprop="dateModified" content="2019-01-29T23:39:06&#43;00:00" />
+<meta itemprop="wordCount" content="10">
+
+
+
+<meta itemprop="keywords" content="R Markdown,plot,regression," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setup New Rstudio Libraries"/>
+<meta name="twitter:description" content="Install blogdown dependencieslibrary(blogdown)install_hugo()blogdown:::new_post_addin()Install standard environmentinstall.packages(&quot;kableExtra&quot;)"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div class="container" >
+    
+<div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Merckey</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+
+    <header id="header" class="header">
+      <div class="header-div">
+        
+<div class="logo-wrapper">
+  <a href="/" class="logo">Merckey</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+    
+    <li class="menu-item ">
+        <a class="menu-item-link" href="/">
+          <i class="fa fa-fw fa-home"></i>
+          Home
+        </a>
+      </li><li class="menu-item ">
+        <a class="menu-item-link" href="/post/">
+          <i class="fa fa-fw fa-home"></i>
+          Archives
+        </a>
+      </li><li class="menu-item ">
+        <a class="menu-item-link" href="/tags/">
+          <i class="fa fa-fw fa-tags"></i>
+          Tags
+        </a>
+      </li><li class="menu-item ">
+        <a class="menu-item-link" href="/categories/">
+          <i class="fa fa-fw fa-th"></i>
+          Categories
+        </a>
+      </li><li class="menu-item ">
+        <a class="menu-item-link" href="/about/">
+          <i class="fa fa-fw fa-user"></i>
+          About
+        </a>
+      </li>
+    <li class="menu-item active">
+      <a class="menu-item-link" href="/search/" id="search">
+        <i class="fa fa-fw fa-search"></i>
+        搜索
+      </a>
+    </li>
+  </ul>
+</nav>
+
+      </div>
+    </header>
+    
+
+    <main id="main" class="main">
+      <div class="content-wrapper" id="mobile-panel">
+        <div id="content" class="content">
+          
+          
+
+          <article class="post">
+    
+    <header class="post-header single-post-header">
+      <h1 class="post-title">Setup New Rstudio Libraries</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> <i class="fa fa-calendar" aria-hidden="true"></i> 2019-01-29 </span>
+        <div class="post-category">
+            | <i class="fa fa-folder" aria-hidden="true"></i>
+            
+              <a href="/categories/r/"> R </a>
+            
+          </div>
+        <span class="more-meta"> | <i class="fa fa-book" aria-hidden="true"></i> 10 words </span>
+        <span class="more-meta"> | <i class="fa fa-clock-o" aria-hidden="true"></i> 1 min read </span>
+        <span class="more-meta">
+          | <i class="fa fa-comment-o" aria-hidden="true"></i>
+          <a href="#gitalk-container" itemprop="discussionUrl">
+            <span class="post-comments-count gitalk-comment-count" itemprop="commentCount"></span>
+          </a>
+           条评论
+        </span>
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    
+  </div>
+  <div class="toc-taxonomy">
+    
+<div class="sidebar-category">
+    <hr>
+    <h5>
+        <a href="/categories/">FEATURED CATEGORY</a>
+    </h5>
+
+    
+        <a href="//categories/r" class="taxonomy-name">
+            r
+            <span class="taxonomy-counts">2</span>
+        </a>
+    
+</div>
+
+<div class="sidebar-tag">
+    <hr>
+    <h5>
+        <a href="/tags/">FEATURED TAG</a>
+    </h5>
+
+    
+        <a href="//tags/plot" class="taxonomy-name">
+            plot
+            <span class="taxonomy-counts">2</span>
+        </a>
+    
+        <a href="//tags/r-markdown" class="taxonomy-name">
+            r-markdown
+            <span class="taxonomy-counts">2</span>
+        </a>
+    
+        <a href="//tags/regression" class="taxonomy-name">
+            regression
+            <span class="taxonomy-counts">2</span>
+        </a>
+    
+</div>
+
+  </div>
+</div>
+
+
+    
+    <div class="post-content">
+      
+
+
+<div id="install-blogdown-dependencies" class="section level2">
+<h2>Install blogdown dependencies</h2>
+<pre class="r"><code>library(blogdown)
+install_hugo()
+blogdown:::new_post_addin()</code></pre>
+</div>
+<div id="install-standard-environment" class="section level2">
+<h2>Install standard environment</h2>
+<pre class="r"><code>install.packages(&quot;kableExtra&quot;)
+</code></pre>
+</div>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Merckey</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">Postlink</span>
+    <span class="item-content"><a href="//2019/01/29/setup-new-rstudio-libraries/" target="_blank">
+      <script>
+        document.write(decodeURI(location.origin + location.pathname))
+      </script>
+    </a></span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">Copyright</span>
+    <span class="item-content">
+        All articles in this blog are licensed under <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a> unless stating additionally.</span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/r-markdown/">R Markdown</a>
+          
+          <a href="/tags/plot/">plot</a>
+          
+          <a href="/tags/regression/">regression</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/2015/07/23/hello-r-markdown/">
+            <span class="next-text nav-default">Hello R Markdown</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+
+    </main>
+    <footer id="footer" class="footer">
+      <div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme -
+    <a class="theme-link" href="https://github.com/ehlxr/hugo-theme-ehlxr">ehlxr</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Merckey</span>
+  </span>
+
+  
+
+
+</div>
+    </footer>
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/ehlxr.min.js?v=0.0.1"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+
+
+
+</body>
+</html>
